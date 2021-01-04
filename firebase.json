@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/odemy-ng",
+    "public": "dist/version-alpha-sale-site-fostering-ng",
     "ignore": [
       "firebase.json",
       "**/.*",
