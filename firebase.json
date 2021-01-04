@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/odemy-ng",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
