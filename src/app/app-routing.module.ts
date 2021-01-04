@@ -55,7 +55,7 @@ import { BlogDetailsStyleTwoComponent } from './components/pages/blog-details-st
 import { BlogDetailsStyleThreeComponent } from './components/pages/blog-details-style-three/blog-details-style-three.component';
 
 const routes: Routes = [
-    {path: '', component: ElearningSchoolComponent},
+    { path: '', component: KindergartenComponent},
     {path: 'vendor-certification-etraining', component: VendorCertificationEtrainingComponent},
     {path: 'online-training-school', component: OnlineTrainingSchoolComponent},
     {path: 'distance-learning', component: DistanceLearningComponent},
