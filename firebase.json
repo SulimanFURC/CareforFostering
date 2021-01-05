@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/version-alpha-sale-site-fostering-ng",
+    "public": "dist/ng-version-alpha-sale-site-fostering",
     "ignore": [
       "firebase.json",
       "**/.*",

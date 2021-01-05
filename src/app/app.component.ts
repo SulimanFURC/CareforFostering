@@ -15,7 +15,7 @@ declare let $: any;
         }
     ]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
     location: any;
     routerSubscription: any;
 
