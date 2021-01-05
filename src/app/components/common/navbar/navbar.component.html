@@ -1,37 +1,56 @@
 <div class="navbar-area">
     <div class="nav nav-top">
-        <div  class="container-fluid">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-5 my-auto">
                     <ul class="list-inline mx-auto companyContact">
-                        <li class="list-inline-item"><i class="fas fa-phone"></i>+44 707 777 7777</li>
-                        <li class="list-inline-item"><div class="vDivider"></div></li>
-                        <li class="list-inline-item"><i class="fas fa-envelope"></i>info@fostercare.co.uk</li>
+                        <li class="list-inline-item">
+                            <i class="fas fa-phone"></i>+44 707 777 7777
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="vDivider"></div>
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fas fa-envelope"></i>info@fostercare.co.uk
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-2 text-center my-auto socialIcons">
                     <ul class="list-inline mx-auto">
-                        <li class="list-inline-item"><a href="#" class="fab fa-facebook-square"></a></li>
-                        <li class="list-inline-item"><a href="#" class="fab fa-twitter-square"></a></li>
-                        <li class="list-inline-item"><a href="#" class="fab fa-linkedin"></a></li>
+                        <li class="list-inline-item">
+                            <a href="#" class="fab fa-facebook-square"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="fab fa-twitter-square"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-md-3 text-right my-auto topMenu">                    
+                <div class="col-md-3 text-right my-auto topMenu">
                     <ul class="list-inline mx-auto">
                         <li class="list-inline-item"><a href="#">FAQ's</a></li>
                         <li class="list-inline-item"><a href="#">Help</a></li>
                         <li class="list-inline-item"><a href="#">Blog</a></li>
-                        <li class="list-inline-item"><a href="#">Contact</a></li>
-                    </ul>   
+                        <li class="list-inline-item">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-2 text-right my-auto">                                        
+
+                <div class="col-md-2 text-right my-auto">
                     <ul class="list-inline mx-auto">
                         <li class="list-inline-item languageBox">
-                            <select name="options">     
-                                <option class="en" value="en"><img sec="assets/img/flags/en.png">English</option>        
-                                <option class="fr" value="fr">French</option>    
-                                <option class="nl" value="nl">Nederlands</option>    
-                            </select>                            
+                            <select name="options">
+                                <option class="en" value="en">
+                                    <img sec="assets/img/flags/en.png" />English
+                                </option>
+                                <option class="fr" value="fr">French</option>
+                                <option class="nl" value="nl">
+                                    Nederlands
+                                </option>
+                            </select>
                         </li>
                     </ul>
                 </div>
@@ -42,7 +61,9 @@
         <div class="container">
             <div class="odemy-responsive-menu">
                 <div class="logo">
-                    <a routerLink="/"><img src="assets/img/logo.png" alt="logo"></a>
+                    <a routerLink="/"
+                        ><img src="assets/img/logo.png" alt="logo"
+                    /></a>
                 </div>
             </div>
         </div>
@@ -51,78 +72,148 @@
     <div class="odemy-nav">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" routerLink="/"><img src="assets/img/logo.png" alt="logo"></a>
+                <a class="navbar-brand" routerLink="/"
+                    ><img src="assets/img/logo.png" alt="logo"
+                /></a>
 
                 <div class="collapse navbar-collapse mean-menu">
-                    <form class="search-box">
-                        <input type="text" class="input-search" placeholder="Search for anything">
-                        <button type="submit"><i class="flaticon-search"></i></button>
-                    </form>
-
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Home</a>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="nav-link"
+                                >Home</a
+                            >
                         </li>
 
-                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">About Fostering <i class='bx bx-chevron-down'></i></a>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="nav-link">
+                                About Fostering
+                                <i class="bx bx-chevron-down"></i
+                            ></a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a routerLink="/success-story" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Why Foster ?</a></li>
+                                <li class="nav-item">
+                                    <a
+                                        routerLink="/success-story"
+                                        class="nav-link"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        >Why Foster ?</a
+                                    >
+                                </li>
 
-                                <li class="nav-item"><a routerLink="/teacher" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}"> Who can Foster ?</a></li>
+                                <li class="nav-item">
+                                    <a
+                                        routerLink="/teacher"
+                                        class="nav-link"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        >Who can Foster ?</a
+                                    >
+                                </li>
 
-                                <li class="nav-item"><a routerLink="/gallery" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Types of Fostering</a></li>
+                                <li class="nav-item">
+                                    <a
+                                        routerLink="/gallery"
+                                        class="nav-link"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        >Types of Fostering</a
+                                    >
+                                </li>
 
-                                <li class="nav-item"><a routerLink="/faq" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">How to become a Foster Carer</a></li>
-                                <li class="nav-item"><a routerLink="/faq" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Thinking of a Transfer</a></li>
+                                <li class="nav-item">
+                                    <a
+                                        routerLink="/faq"
+                                        class="nav-link"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        >Become a Foster Carer</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        routerLink="/faq"
+                                        class="nav-link"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        >Thinking of a Transfer</a
+                                    >
+                                </li>
                             </ul>
                         </li>
 
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="nav-link"
+                                >Why us ?</a
+                            >
+                        </li>
 
-                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Our Services<i class='bx bx-chevron-down'></i></a>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="nav-link"
+                                >Contact</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="nav-link"
+                                >About Us <i class="bx bx-chevron-down"></i
+                            ></a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a routerLink="/success-story" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">CoramBaaf</a></li>
+                                <li class="nav-item">
+                                    <a
+                                        routerLink="/teacher"
+                                        class="nav-link"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        >Support</a
+                                    >
+                                </li>
 
-                                <li class="nav-item"><a routerLink="/teacher" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">FosterTalk</a></li>
+                                <li class="nav-item">
+                                    <a
+                                        routerLink="/gallery"
+                                        class="nav-link"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        >Regulations and Standards</a
+                                    >
+                                </li>
 
-                                <li class="nav-item"><a routerLink="/gallery" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Community Care</a></li>
-
+                                <li class="nav-item">
+                                    <a
+                                        routerLink="/faq"
+                                        class="nav-link"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        >Vision</a
+                                    >
+                                </li>
                             </ul>
                         </li>
-
-
-                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">About Us <i class='bx bx-chevron-down'></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a routerLink="/success-story" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Why us ?</a></li>
-
-                                <li class="nav-item"><a routerLink="/teacher" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Support</a></li>
-
-                                <li class="nav-item"><a routerLink="/gallery" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Regulations and Standards</a></li>
-
-                                <li class="nav-item"><a routerLink="/faq" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Vision </a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Blog</a>
-                        </li>
-
-
-
-
-
-
-
-
                     </ul>
 
                     <div class="others-option d-flex align-items-center">
                         <div class="option-item">
-                            <div class="cart-btn">
-                                <a routerLink="/cart"><i class='flaticon-shopping-cart'></i><span>3</span></a>
-                            </div>
-                        </div>
-
-                        <div class="option-item">
-                            <a routerLink="/profile-authentication" class="default-btn"><i class="flaticon-user"></i>Login/Register<span></span></a>
+                            <a
+                                routerLink="/profile-authentication"
+                                class="default-btn"
+                                ><i class="flaticon-user"></i
+                                >Login/Register<span></span
+                            ></a>
                         </div>
                     </div>
                 </div>
@@ -143,19 +234,33 @@
             <div class="container">
                 <div class="option-inner">
                     <form class="search-box">
-                        <input type="text" class="input-search" placeholder="Search for anything">
-                        <button type="submit"><i class="flaticon-search"></i></button>
+                        <input
+                            type="text"
+                            class="input-search"
+                            placeholder="Search for anything"
+                        />
+                        <button type="submit">
+                            <i class="flaticon-search"></i>
+                        </button>
                     </form>
 
                     <div class="others-option d-flex align-items-center">
                         <div class="option-item">
                             <div class="cart-btn">
-                                <a routerLink="/cart"><i class='flaticon-shopping-cart'></i><span>3</span></a>
+                                <a routerLink="/cart"
+                                    ><i class="flaticon-shopping-cart"></i
+                                    ><span>3</span></a
+                                >
                             </div>
                         </div>
 
                         <div class="option-item">
-                            <a routerLink="/profile-authentication" class="default-btn"><i class="flaticon-user"></i>Login/Register<span></span></a>
+                            <a
+                                routerLink="/profile-authentication"
+                                class="default-btn"
+                                ><i class="flaticon-user"></i
+                                >Login/Register<span></span
+                            ></a>
                         </div>
                     </div>
                 </div>
