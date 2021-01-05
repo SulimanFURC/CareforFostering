@@ -1,0 +1,64 @@
+.nav-top .container-fluid {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .odemy-nav .navbar .navbar-brand img {
+      width: 195px;
+  }
+  .nav.nav-top {
+      background: #fe4a55;
+      color: #fff !important;
+      height: 45px;
+      position: relative;
+      align-items: center;
+      font-size: 16.5px;
+  }
+  
+  .nav.nav-top a{
+    color: #fff !important;
+  }
+  .nav.nav-top .topMenu a{
+    padding: 0px 10px;
+  }
+  .list-inline {
+      margin-bottom: 0px;
+  }
+  .fa, .fas {
+      font-weight: 900;
+      padding-right: 5px;
+  }
+  .fa {
+      padding: 10px;
+      font-size: 18px;
+      width: 40px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    .companyContact li.list-inline-item:nth-child(2) {
+        position: relative;
+        top: 5px;
+    }
+    .vDivider {
+        margin: 0px 20px;
+        width: 1px !important;
+        height: 25px;
+        background: #fff;
+    }
+  .socialIcons .fab {
+    font-size: 28px;
+  }
+  a.navbar-brand {
+    margin-right: 0px;
+}
+
+
+@media (max-width:480px)  {
+    .nav-top{
+        display: none;
+    }
+}

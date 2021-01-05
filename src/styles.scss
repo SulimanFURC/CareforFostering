@@ -820,7 +820,6 @@ Navbar Area CSS
     position: relative;
     background-color: $white-color;
     padding: {
-        top: 5px;
         bottom: 5px;
     };
     &.is-sticky {
@@ -15518,4 +15517,54 @@ Go Top CSS
         transition: $transition;
         transform: translateY(-10px);
     }
+}
+
+
+
+
+/*Custom Css*/
+.nice-select {
+    background: transparent !important;
+    width: 130px !important;
+    height: 30px !important;
+    line-height: 27px;
+    color: #fff !important;
+    border: 2px solid;
+    padding: 0px 5px;
+    font-size: 16px !important;
+}
+ul.list {
+    background: #fe4a56 !important;
+}
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+    background-color: #fe4a56;
+    padding: 0px 5px;
+}
+.nice-select.open .list {
+    width: 100% !important;
+}
+.nice-select .option {
+    cursor: pointer;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100% !important;
+}
+.nice-select.open {
+    background: transparent !important;
+}
+.nice-select:after {
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    content: "";
+    display: block;
+    height: 9px;
+    margin-top: -5px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform-origin: 66% 66%;
+    transform: rotate(45deg);
+    transition: all 0.15s ease-in-out;
+    width: 9px;
 }
