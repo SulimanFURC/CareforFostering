@@ -1,11 +1,7 @@
-.nav-top .container-fluid {
-    padding-left: 120px;
-    padding-right: 120px;
-  }
   .odemy-nav .navbar .navbar-brand img {
       width: 195px;
   }
-  .nav.nav-top {
+  .odemy-nav.nav.nav-top {
       background: #fe4a55;
       color: #fff !important;
       height: 45px;
@@ -14,20 +10,20 @@
       font-size: 16.5px;
   }
   
-  .nav.nav-top a{
+  .odemy-nav.nav.nav-top a{
     color: #fff !important;
   }
-  .nav.nav-top .topMenu a{
+  .odemy-nav.nav.nav-top .topMenu a{
     padding: 0px 10px;
   }
-  .list-inline {
+  .odemy-nav .list-inline {
       margin-bottom: 0px;
   }
-  .fa, .fas {
+  .odemy-nav .fa, .fas {
       font-weight: 900;
       padding-right: 5px;
   }
-  .fa {
+  .odemy-nav .fa {
       padding: 10px;
       font-size: 18px;
       width: 40px;
@@ -36,25 +32,40 @@
       margin: 5px 2px;
     }
     
-    .fa:hover {
+    .odemy-nav .fa:hover {
         opacity: 0.7;
     }
+    .companyContact li.list-inline-item:nth-child(1) {
+        padding-right: 20px;
+        border-right: 1px solid;
+    }
     .companyContact li.list-inline-item:nth-child(2) {
-        position: relative;
-        top: 5px;
+        padding-left: 20px;
     }
-    .vDivider {
-        margin: 0px 20px;
-        width: 1px !important;
-        height: 25px;
-        background: #fff;
-    }
-  .socialIcons .fab {
-    font-size: 28px;
+    // .odemy-nav .companyContact li.list-inline-item:nth-child(2) {
+    //     position: relative;
+    //     top: 5px;
+    // }
+    // .odemy-nav .vDivider {
+    //     margin: 0px 20px;
+    //     width: 1px !important;
+    //     height: 25px;
+    //     background: #fff;
+    // }
+    .odemy-nav .socialIcons .fab, .odemy-nav .socialIcons .fa {
+    font-size: 18px;
+    padding: 0px 5px;
   }
-  a.navbar-brand {
+  .odemy-nav a.navbar-brand {
     margin-right: 0px;
 }
+.odemy-nav .current-menu-ancestor > a {
+    color: #bc360a;
+    font-style: italic;
+    }
+    li:has(> a.active) {
+        color: #bc360a;
+    }
 
 
 @media only screen and (min-width:1681px) and (max-width:1920px){
@@ -95,8 +106,168 @@
         display: none;
     }
 }
+a.default-btn {
+    text-transform: uppercase;
+}
+.odemy-nav .navbar .navbar-nav .nav-item a {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.odemy-nav .navbar .navbar-nav .nav-item a i {
+    font-size: 22px;
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-weight: 900;
+}
+.odemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
+    text-transform: capitalize !important;
+}
+i.flaticon-home {
+    top: -3px !important;
+}
+.odemy-nav.nav.nav-top .topMenu a {
+    text-transform: capitalize;
+}
 
-.nav-top .container-fluid {
-    padding-left: 120px;
-    padding-right: 120px;
+
+
+.search {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+  }
+  .search * {
+    outline: none;
+    box-sizing: border-box;
+  }
+  .search__wrapper {
+    position: relative;
+  }
+  .search__field {
+    width: 50px;
+    height: 50px;
+    color: transparent;
+    font-family: Lato, sans-serif;
+    font-size: 1.35em;
+    padding: 0.35em 50px 0.35em 0;
+    border: 1px solid transparent;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .search__field:focus {
+    border-bottom-color: #ccc;
+    width: 50vw;
+    color: #2b2b2b;
+    cursor: default;
+  }
+  .search__field:focus ~ .search__icon {
+    background-color: transparent;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+  .search__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #e9f1f4;
+    width: 50px;
+    height: 50px;
+    font-size: 1.35em;
+    text-align: center;
+    border-color: transparent;
+    border-radius: 50%;
+    pointer-events: none;
+    display: inline-block;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .search__field::-webkit-input-placeholder {
+    position: relative;
+    top: 0;
+    left: 0;
+    transition-property: top, color;
+    transition-duration: .1s;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+  }
+  .search__field:-moz-placeholder {
+    position: relative;
+    top: 0;
+    left: 0;
+    transition-property: top, color;
+    transition-duration: .1s;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+  }
+  .search__field::-moz-placeholder {
+    position: relative;
+    top: 0;
+    left: 0;
+    transition-property: top, color;
+    transition-duration: .1s;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+  }
+  .search__field:-ms-input-placeholder {
+    position: relative;
+    top: 0;
+    left: 0;
+    transition-property: top, color;
+    transition-duration: .1s;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+  }
+  .search__field::-webkit-input-placeholder[style*=hidden] {
+    color: #83b0c1;
+    font-size: .65em;
+    font-weight: normal;
+    top: -20px;
+    opacity: 1;
+    visibility: visible !important;
+  }
+  .search__field:-moz-placeholder[style*=hidden] {
+    color: #83b0c1;
+    font-size: .65em;
+    font-weight: normal;
+    top: -20px;
+    opacity: 1;
+    visibility: visible !important;
+  }
+  .search__field::-moz-placeholder[style*=hidden] {
+    color: #83b0c1;
+    font-size: .65em;
+    font-weight: normal;
+    top: -20px;
+    opacity: 1;
+    visibility: visible !important;
+  }
+  .search__field:-ms-input-placeholder[style*=hidden] {
+    color: #83b0c1;
+    font-size: .65em;
+    font-weight: normal;
+    top: -20px;
+    opacity: 1;
+    visibility: visible !important;
   }

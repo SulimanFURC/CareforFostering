@@ -1,14 +1,11 @@
 <div class="navbar-area">
-    <div class="nav nav-top">
+    <div class="odemy-nav nav nav-top">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-5 my-auto">
+                <div class="col-md-4 my-auto">
                     <ul class="list-inline mx-auto companyContact">
                         <li class="list-inline-item">
                             <i class="fas fa-phone"></i>+44 707 777 7777
-                        </li>
-                        <li class="list-inline-item">
-                            <div class="vDivider"></div>
                         </li>
                         <li class="list-inline-item">
                             <i class="fas fa-envelope"></i>info@fostercare.co.uk
@@ -18,31 +15,32 @@
                 <div class="col-md-2 text-center my-auto socialIcons">
                     <ul class="list-inline mx-auto">
                         <li class="list-inline-item">
-                            <a href="#" class="fab fa-facebook-square"></a>
+                            <a href="#" class="fab fa-facebook-f"></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#" class="fab fa-twitter-square"></a>
+                            <a href="#" class="fab fa-twitter"></a>
                         </li>
                         <li class="list-inline-item">
                             <a href="#" class="fab fa-linkedin"></a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3 text-right my-auto topMenu">
+                <div class="col-md-4 text-right my-auto topMenu">
                     <ul class="list-inline mx-auto">
                         <li class="list-inline-item"><a routerLink="/latest-news">Latest News</a></li>
-                        <li class="list-inline-item"><a routerLink="/help">Help</a></li>
+                        <li class="list-inline-item"><a routerLink="/help">Support</a></li>
+                        <li class="list-inline-item"><a routerLink="/help">FAQ's</a></li>
                         <li class="list-inline-item"><a routerLink="/blog">Blog</a></li>
-                        <li class="list-inline-item"><a routerLink="/enquire-us">Enquire us</a></li>
+                        <li class="list-inline-item"><a routerLink="/enquire-us">Enquire Us</a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-2 text-right my-auto">
                     <ul class="list-inline mx-auto">
-                        <li class="list-inline-item languageBox">
+                        <li class="list-inline-item languageBox"> 
                             <select name="options">
-                                <option class="en" value="en">
-                                    <img sec="assets/img/flags/en.png" />English
+                                <option class="en" data-imgsrc="assets/img/flags/en.png" value="en">
+                                    English
                                 </option>
                                 <option class="fr" value="fr">French</option>
                                 <option class="nl" value="nl">
@@ -50,6 +48,21 @@
                                 </option>
                             </select>
                         </li>
+                        <li class="list-inline-item currencyBox d-none">                                                       
+                            <select>
+                                <option class="gbr" value="gbr">Pound</option>
+                                <option class="dollar" value="dollar">Dollar</option>
+                                <option class="euro" value="euro">EURO</option>
+                            </select>
+                        </li>
+                        <!-- <li class="list-inline-item">
+                            <form class="search">
+                                <div class="search__wrapper">
+                                  <input type="text" name="" placeholder="Search for..." class="search__field">
+                                  <button type="submit" class="fa fa-search search__icon"></button>
+                                </div>
+                              </form>
+                        </li> -->
                     </ul>
                 </div>
             </div>
