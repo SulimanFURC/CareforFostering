@@ -639,4 +639,15 @@
         }
     });
 
+	// Remove Nice Select From Language Translate Box
+	$(window).on ('load', function (){
+        $("#languageBox .languageSelector").css("display", "block");
+        $("#languageBox .nice-select").css("display", "none");
+        $('.countrypicker').countrypicker();
+    });
+
+   
+
 }(jQuery));
+
+

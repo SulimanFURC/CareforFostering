@@ -14,6 +14,7 @@ $font-size: 16px;
 $transition: .5s;
 
 body {
+    overflow-x: hidden !important;
     padding: 0;
     margin: 0;
     font: {
@@ -420,7 +421,7 @@ Navbar Area CSS
                         right: 13px;
                     };
                     i {
-                        font-size: 18px;
+                        font-size: 16px;
                         position: relative;
                         top: 2px;
                         display: inline-block;
@@ -820,7 +821,7 @@ Navbar Area CSS
     position: relative;
     background-color: $white-color;
     padding: {
-        bottom: 5px;
+        bottom: 0px;
     };
     &.is-sticky {
         position: fixed;
@@ -11192,6 +11193,7 @@ Teacher Register Area CSS
         position: center center;
         size: cover;
         repeat: no-repeat;
+    margin-bottom: 45px;
     };
     h2 {
         margin-bottom: 0;
@@ -11217,7 +11219,7 @@ Teacher Register Area CSS
             border: none;
             color: $white-color;
             background-color: #c22b34;
-            height: 50px;
+            height: 40px;
             padding-left: 15px;
             border-radius: 5px;
             font: {
@@ -15529,7 +15531,7 @@ Go Top CSS
     height: 30px !important;
     line-height: 27px;
     color: #fff !important;
-    border: 2px solid;
+    border: 1px solid;
     padding: 0px 5px;
     font-size: 16px !important;
 }
@@ -15545,8 +15547,8 @@ ul.list {
 }
 .nice-select .option {
     cursor: pointer;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: 100% !important;
 }
 .nice-select.open {

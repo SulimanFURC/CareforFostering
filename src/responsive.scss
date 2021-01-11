@@ -7426,6 +7426,14 @@ $value_nine: 1550px;
 
 @media only #{$media} and ($feature_min : $value_nine) {
 
+    .footer-area {
+        .container-fluid {
+            padding: {
+                left: 120px;
+                right: 120px;
+            };
+        }
+    }
     .odemy-nav {
         .container-fluid {
             padding: {

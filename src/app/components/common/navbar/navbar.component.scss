@@ -7,7 +7,7 @@
       height: 45px;
       position: relative;
       align-items: center;
-      font-size: 16.5px;
+      font-size: 13px;
   }
   
   .odemy-nav.nav.nav-top a{
@@ -52,72 +52,62 @@
     //     height: 25px;
     //     background: #fff;
     // }
-    .odemy-nav .socialIcons .fab, .odemy-nav .socialIcons .fa {
-    font-size: 18px;
+.odemy-nav .socialIcons .fab, .odemy-nav .socialIcons .fa {
+    font-size: 16px;
     padding: 0px 5px;
-  }
+}
   .odemy-nav a.navbar-brand {
     margin-right: 0px;
 }
-.odemy-nav .current-menu-ancestor > a {
-    color: #bc360a;
-    font-style: italic;
-    }
-    li:has(> a.active) {
-        color: #bc360a;
-    }
 
 
-@media only screen and (min-width:1681px) and (max-width:1920px){
-
+@media only screen and (max-width: 1199px){
+  .odemy-nav.nav.nav-top {
+    display: block;
 }
-@media only screen and (min-width:321px) and (max-width:1680px){
-    
+.odemy-nav .container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
 }
-@media only screen and (min-width:321px) and (max-width:768px){
-    
+.odemy-nav.nav.nav-top{
+  height: 30px;
+  padding-top: 5px;
+  margin-bottom: 10px;
 }
-@media only screen and (min-width:321px) and (max-width:768px){
-    
+.navbar-area {
+  padding-top: 0px !important;
 }
-@media only screen and (min-width:321px) and (max-width:768px){
-    
+.list-inline.mx-auto.companyContact {
+  text-align: center;
 }
-@media (max-width:1920px)  {
-
-}
-@media (max-width:1680px)  {
-
-}
-@media (max-width:1500px)  {
-
-}
-@media (max-width:1024px)  {
-
-}
-@media (max-width:1080px)  {
-
-}
-@media (max-width:720px)  {
 
 }
 @media (max-width:480px)  {
-    .nav-top{
-        display: none;
-    }
+    // .nav-top{
+    //     display: none;
+    // }
+    .mean-container .mean-nav ul li a .flaticon-home {
+      display: block !important;
+  }
+}
+#languageBox {
+  margin-right: 0px;
 }
 a.default-btn {
     text-transform: uppercase;
 }
 .odemy-nav .navbar .navbar-nav .nav-item a {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
 }
+.default-btn {
+  font-weight: 700;
+  font-size: 14px;
+}
 .odemy-nav .navbar .navbar-nav .nav-item a i {
-    font-size: 22px;
     position: relative;
-    top: 2px;
+    top: 0px;
     display: inline-block;
     margin-left: 0px;
     margin-right: 0px;
@@ -132,142 +122,88 @@ i.flaticon-home {
 .odemy-nav.nav.nav-top .topMenu a {
     text-transform: capitalize;
 }
+.flaticon-home:before {
+  content: "\f11b";
+  font-size: 20px !important;
+  position: relative;
+  top: -3px;
+}
+
+select.languageSelector {
+  background: transparent !important;
+  border: 0px;
+  color: #fff;
+  font-weight: 800 ;
+  width: 80px;
+}
+.languageSelector option {
+  background: #fff;
+  color: #000;
+}
+.languageSelector option:hover {
+  background: #fe4a55;
+  color: #fff;
+}
+select.selectpicker.countrypicker {
+  background: transparent !important;
+  border: 0px;
+  color: #fff;
+  font-weight: 800 ;
+  width: 80px;
+}
 
 
-
-.search {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
-  }
-  .search * {
-    outline: none;
-    box-sizing: border-box;
-  }
-  .search__wrapper {
-    position: relative;
-  }
-  .search__field {
-    width: 50px;
-    height: 50px;
-    color: transparent;
-    font-family: Lato, sans-serif;
-    font-size: 1.35em;
-    padding: 0.35em 50px 0.35em 0;
-    border: 1px solid transparent;
-    border-radius: 0;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  .search__field:focus {
-    border-bottom-color: #ccc;
-    width: 50vw;
-    color: #2b2b2b;
-    cursor: default;
-  }
-  .search__field:focus ~ .search__icon {
-    background-color: transparent;
-    cursor: pointer;
-    pointer-events: auto;
-  }
-  .search__icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #e9f1f4;
-    width: 50px;
-    height: 50px;
-    font-size: 1.35em;
-    text-align: center;
-    border-color: transparent;
-    border-radius: 50%;
-    pointer-events: none;
-    display: inline-block;
-    transition: background-color 0.2s ease-in-out;
-  }
-  .search__field::-webkit-input-placeholder {
-    position: relative;
-    top: 0;
-    left: 0;
-    transition-property: top, color;
-    transition-duration: .1s;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    perspective: 1000;
-  }
-  .search__field:-moz-placeholder {
-    position: relative;
-    top: 0;
-    left: 0;
-    transition-property: top, color;
-    transition-duration: .1s;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    perspective: 1000;
-  }
-  .search__field::-moz-placeholder {
-    position: relative;
-    top: 0;
-    left: 0;
-    transition-property: top, color;
-    transition-duration: .1s;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    perspective: 1000;
-  }
-  .search__field:-ms-input-placeholder {
-    position: relative;
-    top: 0;
-    left: 0;
-    transition-property: top, color;
-    transition-duration: .1s;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    perspective: 1000;
-  }
-  .search__field::-webkit-input-placeholder[style*=hidden] {
-    color: #83b0c1;
-    font-size: .65em;
-    font-weight: normal;
-    top: -20px;
-    opacity: 1;
-    visibility: visible !important;
-  }
-  .search__field:-moz-placeholder[style*=hidden] {
-    color: #83b0c1;
-    font-size: .65em;
-    font-weight: normal;
-    top: -20px;
-    opacity: 1;
-    visibility: visible !important;
-  }
-  .search__field::-moz-placeholder[style*=hidden] {
-    color: #83b0c1;
-    font-size: .65em;
-    font-weight: normal;
-    top: -20px;
-    opacity: 1;
-    visibility: visible !important;
-  }
-  .search__field:-ms-input-placeholder[style*=hidden] {
-    color: #83b0c1;
-    font-size: .65em;
-    font-weight: normal;
-    top: -20px;
-    opacity: 1;
-    visibility: visible !important;
-  }
+/*
+Make bootstrap-select work with bootstrap 4 see:
+https://github.com/silviomoreto/bootstrap-select/issues/1135
+*/
+.dropdown-toggle.btn-default {
+  color: #292b2c;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.bootstrap-select.show > .dropdown-menu > .dropdown-menu {
+  display: block;
+}
+.bootstrap-select > .dropdown-menu > .dropdown-menu li.hidden {
+  display: none;
+}
+.bootstrap-select > .dropdown-menu > .dropdown-menu li a {
+  display: block;
+  width: 100%;
+  padding: 3px 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #292b2c;
+  text-align: inherit;
+  white-space: nowrap;
+  background: 0 0;
+  border: 0;
+  text-decoration: none;
+}
+.bootstrap-select > .dropdown-menu > .dropdown-menu li a:hover {
+  background-color: #f4f4f4;
+}
+.bootstrap-select > .dropdown-toggle {
+  width: 100%;
+}
+.dropdown-menu > li.active > a {
+  color: #fff !important;
+  background-color: #337ab7 !important;
+}
+.bootstrap-select .check-mark {
+  line-height: 14px;
+}
+.bootstrap-select .check-mark::after {
+  font-family: "FontAwesome";
+  content: "\f00c";
+}
+.bootstrap-select button {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ 
+/* Make filled out selects be the same size as empty selects */
+.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+  display: inline !important;
+}
