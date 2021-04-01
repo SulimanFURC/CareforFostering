@@ -1,36 +1,41 @@
-(function($){
-	"use strict";
+(function ($) {
+    "use strict";
 
     // Header Sticky
-    $(window).on('scroll',function() {
-        if ($(this).scrollTop() > 120){  
+    $(window).on('scroll', function () {
+        if ($(this).scrollTop() > 120) {
             $('.navbar-area').addClass("is-sticky");
-        }
-        else{
+        } else {
             $('.navbar-area').removeClass("is-sticky");
         }
     });
 
     // Others Option Responsive JS
-    $(".others-option-for-responsive .dot-menu").on("click", function(){
+    $(".others-option-for-responsive .dot-menu").on("click", function () {
         $(".others-option-for-responsive .container .container").toggleClass("active");
     });
-    
+
     // Button Hover JS
-    $(function() {
+    $(function () {
         $('.default-btn')
-        .on('mouseenter', function(e) {
-            var parentOffset = $(this).offset(),
-            relX = e.pageX - parentOffset.left,
-            relY = e.pageY - parentOffset.top;
-            $(this).find('span').css({top:relY, left:relX})
-        })
-        .on('mouseout', function(e) {
-            var parentOffset = $(this).offset(),
-            relX = e.pageX - parentOffset.left,
-            relY = e.pageY - parentOffset.top;
-            $(this).find('span').css({top:relY, left:relX})
-        });
+            .on('mouseenter', function (e) {
+                var parentOffset = $(this).offset(),
+                    relX = e.pageX - parentOffset.left,
+                    relY = e.pageY - parentOffset.top;
+                $(this).find('span').css({
+                    top: relY,
+                    left: relX
+                })
+            })
+            .on('mouseout', function (e) {
+                var parentOffset = $(this).offset(),
+                    relX = e.pageX - parentOffset.left,
+                    relY = e.pageY - parentOffset.top;
+                $(this).find('span').css({
+                    top: relY,
+                    left: relX
+                })
+            });
     });
 
     // Mean Menu
@@ -39,180 +44,221 @@
     });
 
     // TweenMax JS
-    $('.main-banner, .banner-section, .banner-wrapper-area, .banner-wrapper').mousemove(function(e){
+    $('.main-banner, .banner-section, .banner-wrapper-area, .banner-wrapper').mousemove(function (e) {
         var wx = $(window).width();
         var wy = $(window).height();
         var x = e.pageX - this.offsetLeft;
         var y = e.pageY - this.offsetTop;
-        var newx = x - wx/2;
-        var newy = y - wy/2;
-        $('.banner-shape1, .banner-shape2, .banner-shape3, .banner-shape4, .banner-shape5, .banner-shape6, .banner-shape7, .banner-shape8, .banner-shape9, .banner-shape10, .banner-shape11, .banner-shape12, .banner-shape13').each(function(){
+        var newx = x - wx / 2;
+        var newy = y - wy / 2;
+        $('.banner-shape1, .banner-shape2, .banner-shape3, .banner-shape4, .banner-shape5, .banner-shape6, .banner-shape7, .banner-shape8, .banner-shape9, .banner-shape10, .banner-shape11, .banner-shape12, .banner-shape13').each(function () {
             var speed = $(this).attr('data-speed');
-            if($(this).attr('data-revert')) speed *= -1;
-            TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
+            if ($(this).attr('data-revert')) speed *= -1;
+            TweenMax.to($(this), 1, {
+                x: (1 - newx * speed),
+                y: (1 - newy * speed)
+            });
         });
     });
-    $('.about-area, .about-area-two, .about-area-three').mousemove(function(e){
+    $('.about-area, .about-area-two, .about-area-three').mousemove(function (e) {
         var wx = $(window).width();
         var wy = $(window).height();
         var x = e.pageX - this.offsetLeft;
         var y = e.pageY - this.offsetTop;
-        var newx = x - wx/2;
-        var newy = y - wy/2;
-        $('.shape1, .shape2, .shape3, .shape4, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12, .shape13, .shape14, .shape15, .shape16, .shape17, .shape18, .shape19, .shape20, .shape21, .shape22, .shape23').each(function(){
+        var newx = x - wx / 2;
+        var newy = y - wy / 2;
+        $('.shape1, .shape2, .shape3, .shape4, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12, .shape13, .shape14, .shape15, .shape16, .shape17, .shape18, .shape19, .shape20, .shape21, .shape22, .shape23').each(function () {
             var speed = $(this).attr('data-speed');
-            if($(this).attr('data-revert')) speed *= -1;
-            TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
+            if ($(this).attr('data-revert')) speed *= -1;
+            TweenMax.to($(this), 1, {
+                x: (1 - newx * speed),
+                y: (1 - newy * speed)
+            });
         });
     });
-    $('.funfacts-and-feedback-area').mousemove(function(e){
+    $('.funfacts-and-feedback-area').mousemove(function (e) {
         var wx = $(window).width();
         var wy = $(window).height();
         var x = e.pageX - this.offsetLeft;
         var y = e.pageY - this.offsetTop;
-        var newx = x - wx/2;
-        var newy = y - wy/2;
-        $('.shape1, .shape2, .shape3, .shape4, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12, .shape13, .shape14, .shape15, .shape16, .shape17, .shape18, .shape19, .shape20, .shape21, .shape22, .shape23').each(function(){
+        var newx = x - wx / 2;
+        var newy = y - wy / 2;
+        $('.shape1, .shape2, .shape3, .shape4, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12, .shape13, .shape14, .shape15, .shape16, .shape17, .shape18, .shape19, .shape20, .shape21, .shape22, .shape23').each(function () {
             var speed = $(this).attr('data-speed');
-            if($(this).attr('data-revert')) speed *= -1;
-            TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
+            if ($(this).attr('data-revert')) speed *= -1;
+            TweenMax.to($(this), 1, {
+                x: (1 - newx * speed),
+                y: (1 - newy * speed)
+            });
         });
     });
-    $('.get-instant-courses-area').mousemove(function(e){
+    $('.get-instant-courses-area').mousemove(function (e) {
         var wx = $(window).width();
         var wy = $(window).height();
         var x = e.pageX - this.offsetLeft;
         var y = e.pageY - this.offsetTop;
-        var newx = x - wx/2;
-        var newy = y - wy/2;
-        $('.shape1, .shape2, .shape3, .shape4, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12, .shape13, .shape14, .shape15, .shape16, .shape17, .shape18, .shape19, .shape20, .shape21, .shape22, .shape23').each(function(){
+        var newx = x - wx / 2;
+        var newy = y - wy / 2;
+        $('.shape1, .shape2, .shape3, .shape4, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12, .shape13, .shape14, .shape15, .shape16, .shape17, .shape18, .shape19, .shape20, .shape21, .shape22, .shape23').each(function () {
             var speed = $(this).attr('data-speed');
-            if($(this).attr('data-revert')) speed *= -1;
-            TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
+            if ($(this).attr('data-revert')) speed *= -1;
+            TweenMax.to($(this), 1, {
+                x: (1 - newx * speed),
+                y: (1 - newy * speed)
+            });
         });
     });
-    $('.view-all-courses-area, .view-all-courses-area-two').mousemove(function(e){
+    $('.view-all-courses-area, .view-all-courses-area-two').mousemove(function (e) {
         var wx = $(window).width();
         var wy = $(window).height();
         var x = e.pageX - this.offsetLeft;
         var y = e.pageY - this.offsetTop;
-        var newx = x - wx/2;
-        var newy = y - wy/2;
-        $('.shape1, .shape2, .shape3, .shape4, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12, .shape13, .shape14, .shape15, .shape16, .shape17, .shape18, .shape19, .shape20, .shape21, .shape22, .shape23').each(function(){
+        var newx = x - wx / 2;
+        var newy = y - wy / 2;
+        $('.shape1, .shape2, .shape3, .shape4, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12, .shape13, .shape14, .shape15, .shape16, .shape17, .shape18, .shape19, .shape20, .shape21, .shape22, .shape23').each(function () {
             var speed = $(this).attr('data-speed');
-            if($(this).attr('data-revert')) speed *= -1;
-            TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
+            if ($(this).attr('data-revert')) speed *= -1;
+            TweenMax.to($(this), 1, {
+                x: (1 - newx * speed),
+                y: (1 - newy * speed)
+            });
         });
     });
-    $('.premium-access-area').mousemove(function(e){
+    $('.premium-access-area').mousemove(function (e) {
         var wx = $(window).width();
         var wy = $(window).height();
         var x = e.pageX - this.offsetLeft;
         var y = e.pageY - this.offsetTop;
-        var newx = x - wx/2;
-        var newy = y - wy/2;
-        $('.shape1, .shape2, .shape3, .shape4, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12, .shape13, .shape14, .shape15, .shape16, .shape17, .shape18, .shape19, .shape20, .shape21, .shape22, .shape23').each(function(){
+        var newx = x - wx / 2;
+        var newy = y - wy / 2;
+        $('.shape1, .shape2, .shape3, .shape4, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12, .shape13, .shape14, .shape15, .shape16, .shape17, .shape18, .shape19, .shape20, .shape21, .shape22, .shape23').each(function () {
             var speed = $(this).attr('data-speed');
-            if($(this).attr('data-revert')) speed *= -1;
-            TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
+            if ($(this).attr('data-revert')) speed *= -1;
+            TweenMax.to($(this), 1, {
+                x: (1 - newx * speed),
+                y: (1 - newy * speed)
+            });
         });
     });
-    $('.slogan-area').mousemove(function(e){
+    $('.slogan-area').mousemove(function (e) {
         var wx = $(window).width();
         var wy = $(window).height();
         var x = e.pageX - this.offsetLeft;
         var y = e.pageY - this.offsetTop;
-        var newx = x - wx/2;
-        var newy = y - wy/2;
-        $('.shape1, .shape2, .shape3, .shape4, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12, .shape13, .shape14, .shape15, .shape16, .shape17, .shape18, .shape19, .shape20, .shape21, .shape22, .shape23').each(function(){
+        var newx = x - wx / 2;
+        var newy = y - wy / 2;
+        $('.shape1, .shape2, .shape3, .shape4, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12, .shape13, .shape14, .shape15, .shape16, .shape17, .shape18, .shape19, .shape20, .shape21, .shape22, .shape23').each(function () {
             var speed = $(this).attr('data-speed');
-            if($(this).attr('data-revert')) speed *= -1;
-            TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
+            if ($(this).attr('data-revert')) speed *= -1;
+            TweenMax.to($(this), 1, {
+                x: (1 - newx * speed),
+                y: (1 - newy * speed)
+            });
         });
     });
-    $('.subscribe-area').mousemove(function(e){
+    $('.subscribe-area').mousemove(function (e) {
         var wx = $(window).width();
         var wy = $(window).height();
         var x = e.pageX - this.offsetLeft;
         var y = e.pageY - this.offsetTop;
-        var newx = x - wx/2;
-        var newy = y - wy/2;
-        $('.shape1, .shape2, .shape3, .shape4, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12, .shape13, .shape14, .shape15, .shape16, .shape17, .shape18, .shape19, .shape20, .shape21, .shape22, .shape23').each(function(){
+        var newx = x - wx / 2;
+        var newy = y - wy / 2;
+        $('.shape1, .shape2, .shape3, .shape4, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12, .shape13, .shape14, .shape15, .shape16, .shape17, .shape18, .shape19, .shape20, .shape21, .shape22, .shape23').each(function () {
             var speed = $(this).attr('data-speed');
-            if($(this).attr('data-revert')) speed *= -1;
-            TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
+            if ($(this).attr('data-revert')) speed *= -1;
+            TweenMax.to($(this), 1, {
+                x: (1 - newx * speed),
+                y: (1 - newy * speed)
+            });
         });
     });
-    $('.feedback-area').mousemove(function(e){
+    $('.feedback-area').mousemove(function (e) {
         var wx = $(window).width();
         var wy = $(window).height();
         var x = e.pageX - this.offsetLeft;
         var y = e.pageY - this.offsetTop;
-        var newx = x - wx/2;
-        var newy = y - wy/2;
-        $('.shape1, .shape2, .shape3, .shape4, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12, .shape13, .shape14, .shape15, .shape16, .shape17, .shape18, .shape19, .shape20, .shape21, .shape22, .shape23').each(function(){
+        var newx = x - wx / 2;
+        var newy = y - wy / 2;
+        $('.shape1, .shape2, .shape3, .shape4, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12, .shape13, .shape14, .shape15, .shape16, .shape17, .shape18, .shape19, .shape20, .shape21, .shape22, .shape23').each(function () {
             var speed = $(this).attr('data-speed');
-            if($(this).attr('data-revert')) speed *= -1;
-            TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
+            if ($(this).attr('data-revert')) speed *= -1;
+            TweenMax.to($(this), 1, {
+                x: (1 - newx * speed),
+                y: (1 - newy * speed)
+            });
         });
     });
-    $('.success-story-area').mousemove(function(e){
+    $('.success-story-area').mousemove(function (e) {
         var wx = $(window).width();
         var wy = $(window).height();
         var x = e.pageX - this.offsetLeft;
         var y = e.pageY - this.offsetTop;
-        var newx = x - wx/2;
-        var newy = y - wy/2;
-        $('.shape1, .shape2, .shape3, .shape4, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12, .shape13, .shape14, .shape15, .shape16, .shape17, .shape18, .shape19, .shape20, .shape21, .shape22, .shape23').each(function(){
+        var newx = x - wx / 2;
+        var newy = y - wy / 2;
+        $('.shape1, .shape2, .shape3, .shape4, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12, .shape13, .shape14, .shape15, .shape16, .shape17, .shape18, .shape19, .shape20, .shape21, .shape22, .shape23').each(function () {
             var speed = $(this).attr('data-speed');
-            if($(this).attr('data-revert')) speed *= -1;
-            TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
+            if ($(this).attr('data-revert')) speed *= -1;
+            TweenMax.to($(this), 1, {
+                x: (1 - newx * speed),
+                y: (1 - newy * speed)
+            });
         });
     });
-    $('.health-coaching-banner-area').mousemove(function(e){
+    $('.health-coaching-banner-area').mousemove(function (e) {
         var wx = $(window).width();
         var wy = $(window).height();
         var x = e.pageX - this.offsetLeft;
         var y = e.pageY - this.offsetTop;
-        var newx = x - wx/2;
-        var newy = y - wy/2;
-        $('.health-coaching-shape2, .health-coaching-shape4, .health-coaching-shape5, .health-coaching-shape6, .health-coaching-shape7').each(function(){
+        var newx = x - wx / 2;
+        var newy = y - wy / 2;
+        $('.health-coaching-shape2, .health-coaching-shape4, .health-coaching-shape5, .health-coaching-shape6, .health-coaching-shape7').each(function () {
             var speed = $(this).attr('data-speed');
-            if($(this).attr('data-revert')) speed *= -1;
-            TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
+            if ($(this).attr('data-revert')) speed *= -1;
+            TweenMax.to($(this), 1, {
+                x: (1 - newx * speed),
+                y: (1 - newy * speed)
+            });
         });
     });
-    $('.experience-area').mousemove(function(e){
+    $('.experience-area').mousemove(function (e) {
         var wx = $(window).width();
         var wy = $(window).height();
         var x = e.pageX - this.offsetLeft;
         var y = e.pageY - this.offsetTop;
-        var newx = x - wx/2;
-        var newy = y - wy/2;
-        $('.experience-shape1, .experience-shape2').each(function(){
+        var newx = x - wx / 2;
+        var newy = y - wy / 2;
+        $('.experience-shape1, .experience-shape2').each(function () {
             var speed = $(this).attr('data-speed');
-            if($(this).attr('data-revert')) speed *= -1;
-            TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
+            if ($(this).attr('data-revert')) speed *= -1;
+            TweenMax.to($(this), 1, {
+                x: (1 - newx * speed),
+                y: (1 - newy * speed)
+            });
         });
     });
-    $('.kindergarten-main-banner').mousemove(function(e){
+    $('.kindergarten-main-banner').mousemove(function (e) {
         var wx = $(window).width();
         var wy = $(window).height();
         var x = e.pageX - this.offsetLeft;
         var y = e.pageY - this.offsetTop;
-        var newx = x - wx/2;
-        var newy = y - wy/2;
-        $('.kindergarten-banner-image .image img').each(function(){
+        var newx = x - wx / 2;
+        var newy = y - wy / 2;
+        $('.kindergarten-banner-image .image img').each(function () {
             var speed = $(this).attr('data-speed');
-            if($(this).attr('data-revert')) speed *= -1;
-            TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
+            if ($(this).attr('data-revert')) speed *= -1;
+            TweenMax.to($(this), 1, {
+                x: (1 - newx * speed),
+                y: (1 - newy * speed)
+            });
         });
     });
 
     // Banner Animation
-    window.onload = function() {
+    window.onload = function () {
         var timeline = new TimelineMax();
-        timeline.from(".main-banner-content, .main-banner-courses-list, .banner-wrapper-content, .banner-wrapper-image, .banner-content, .banner-image", 1, {y:60},0)
+        timeline.from(".main-banner-content, .main-banner-courses-list, .banner-wrapper-content, .banner-wrapper-image, .banner-content, .banner-image", 1, {
+            y: 60
+        }, 0)
     }
 
     // Feedback Slides
@@ -242,10 +288,10 @@
     });
 
     // MixItUp Shorting
-    $(function(){
+    $(function () {
         $('.shorting').mixItUp();
     });
-    
+
     // Sidebar Sticky
     $('.courses-sidebar-sticky').stickySidebar({
         topSpacing: 90,
@@ -297,8 +343,8 @@
     });
 
     // FAQ Accordion
-    $(function() {
-        $('.accordion').find('.accordion-title').on('click', function(){
+    $(function () {
+        $('.accordion').find('.accordion-title').on('click', function () {
             // Adds Active Class
             $(this).toggleClass('active');
             // Expand or Collapse This Panel
@@ -306,10 +352,10 @@
             // Hide The Other Panels
             $('.accordion-content').not($(this).next()).slideUp('fast');
             // Removes Active Class From Other Titles
-            $('.accordion-title').not($(this)).removeClass('active');		
+            $('.accordion-title').not($(this)).removeClass('active');
         });
     });
-    
+
     // Article Image Slides
     $('.article-image-slides').owlCarousel({
         loop: true,
@@ -326,9 +372,9 @@
     });
 
     // Odometer JS
-    $('.odometer').appear(function(e) {
+    $('.odometer').appear(function (e) {
         var odo = $(".odometer");
-        odo.each(function() {
+        odo.each(function () {
             var countNumber = $(this).attr("data-count");
             $(this).html(countNumber);
         });
@@ -394,10 +440,10 @@
     $('.popup-btn').magnificPopup({
         type: 'image',
         gallery: {
-            enabled:true
+            enabled: true
         }
     });
-    
+
     // Advisor Slides Two
     $('.advisor-slides-two').owlCarousel({
         loop: true,
@@ -435,15 +481,15 @@
     });
 
     // Input Plus & Minus Number JS
-    $('.input-counter').each(function() {
+    $('.input-counter').each(function () {
         var spinner = jQuery(this),
-        input = spinner.find('input[type="text"]'),
-        btnUp = spinner.find('.plus-btn'),
-        btnDown = spinner.find('.minus-btn'),
-        min = input.attr('min'),
-        max = input.attr('max');
-        
-        btnUp.on('click', function() {
+            input = spinner.find('input[type="text"]'),
+            btnUp = spinner.find('.plus-btn'),
+            btnDown = spinner.find('.minus-btn'),
+            min = input.attr('min'),
+            max = input.attr('max');
+
+        btnUp.on('click', function () {
             var oldValue = parseFloat(input.val());
             if (oldValue >= max) {
                 var newVal = oldValue;
@@ -453,7 +499,7 @@
             spinner.find("input").val(newVal);
             spinner.find("input").trigger("change");
         });
-        btnDown.on('click', function() {
+        btnDown.on('click', function () {
             var oldValue = parseFloat(input.val());
             if (oldValue <= min) {
                 var newVal = oldValue;
@@ -464,7 +510,7 @@
             spinner.find("input").trigger("change");
         });
     });
-    
+
     // Load More
     $(function () {
         $(".courses-section .col-lg-4").slice(0, 6).show();
@@ -557,7 +603,7 @@
 
     // Services Slides
     $('.services-slides').owlCarousel({
-        loop: true,
+        loop: false,
         nav: true,
         dots: false,
         autoplayHoverPause: true,
@@ -612,42 +658,121 @@
     });
 
     // Go to Top
-    $(function(){
+    $(function () {
         // Scroll Event
-        $(window).on('scroll', function(){
+        $(window).on('scroll', function () {
             var scrolled = $(window).scrollTop();
             if (scrolled > 300) $('.go-top').addClass('active');
             if (scrolled < 300) $('.go-top').removeClass('active');
-        });  
+        });
         // Click Event
-        $('.go-top').on('click', function() {
-            $("html, body").animate({ scrollTop: "0" },  500);
+        $('.go-top').on('click', function () {
+            $("html, body").animate({
+                scrollTop: "0"
+            }, 500);
         });
     });
-	
-	// WoW JS
-	$(window).on ('load', function (){
-        if ($(".wow").length) { 
-            var wow = new WOW ({
-                boxClass:     'wow',      // Animated element css class (default is wow)
+
+    // WoW JS
+    $(window).on('load', function () {
+        if ($(".wow").length) {
+            var wow = new WOW({
+                boxClass: 'wow', // Animated element css class (default is wow)
                 animateClass: 'animated', // Animation css class (default is animated)
-                offset:       20,         // Distance to the element when triggering the animation (default is 0)
-                mobile:       true,       // Trigger animations on mobile devices (default is true)
-                live:         true,       // Act on asynchronously loaded content (default is true)
+                offset: 20, // Distance to the element when triggering the animation (default is 0)
+                mobile: true, // Trigger animations on mobile devices (default is true)
+                live: true, // Act on asynchronously loaded content (default is true)
             });
             wow.init();
         }
     });
 
-	// Remove Nice Select From Language Translate Box
-	$(window).on ('load', function (){
+    // Remove Nice Select From Language Translate Box
+    $(window).on('load', function () {
         $("#languageBox .languageSelector").css("display", "block");
         $("#languageBox .nice-select").css("display", "none");
         $('.countrypicker').countrypicker();
     });
 
-   
+
+    // become a foster
+    $(document).ready(function () {
+
+        var current_fs, next_fs, previous_fs; //fieldsets
+        var opacity;
+
+        $(".next").click(function () {
+
+            current_fs = $(this).parent();
+            next_fs = $(this).parent().next();
+
+            //Add Class Active
+            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+            //show the next fieldset
+            next_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate({
+                opacity: 0
+            }, {
+                step: function (now) {
+                    // for making fielset appear animation
+                    opacity = 1 - now;
+
+                    current_fs.css({
+                        'display': 'none',
+                        'position': 'relative'
+                    });
+                    next_fs.css({
+                        'opacity': opacity
+                    });
+                },
+                duration: 600
+            });
+        });
+
+        $(".previous").click(function () {
+
+            current_fs = $(this).parent();
+            previous_fs = $(this).parent().prev();
+
+            //Remove class active
+            $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+            //show the previous fieldset
+            previous_fs.show();
+
+            //hide the current fieldset with style
+            current_fs.animate({
+                opacity: 0
+            }, {
+                step: function (now) {
+                    // for making fielset appear animation
+                    opacity = 1 - now;
+
+                    current_fs.css({
+                        'display': 'none',
+                        'position': 'relative'
+                    });
+                    previous_fs.css({
+                        'opacity': opacity
+                    });
+                },
+                duration: 600
+            });
+        });
+
+        $('.radio-group .radio').click(function () {
+            $(this).parent().find('.radio').removeClass('selected');
+            $(this).addClass('selected');
+        });
+
+        $(".submit").click(function () {
+            return false;
+        })
+
+    });
+
+    // become a foster
 
 }(jQuery));
-
-

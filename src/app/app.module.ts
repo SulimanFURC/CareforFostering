@@ -18,7 +18,6 @@ import { WhyUsComponent } from './components/pages/why-us/why-us.component';
 import { SupportComponent } from './components/pages/support/support.component';
 import { RegulationsStandardsComponent } from './components/pages/regulations-standards/regulations-standards.component';
 import { VisionComponent } from './components/pages/vision/vision.component';
-import { EnquireUsComponent } from './components/pages/enquire-us/enquire-us.component';
 import { BlogComponent } from './components/pages/blog/blog.component';
 import { HelpComponent } from './components/pages/help/help.component';
 import { LatestNewsComponent } from './components/pages/latest-news/latest-news.component';
@@ -30,6 +29,18 @@ import { JobsVolunteeringComponent } from './components/pages/jobs-volunteering/
 import { GdprPolicyComponent } from './components/pages/gdpr-policy/gdpr-policy.component';
 import { SiteMapComponent } from './components/pages/site-map/site-map.component';
 import { AboutUsComponent } from './components/pages/about-us/about-us.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BecomeAFosterCareComponent } from './components/pages/become-a-foster-care/become-a-foster-care.component';
+import { MockingbirdFamilyModelComponent } from './components/pages/mockingbird-family-model/mockingbird-family-model.component';
+import { QuizForFosterComponent } from './components/pages/quiz-for-foster/quiz-for-foster.component';
+import { CanIFosterComponent } from './components/pages/can-i-foster/can-i-foster.component';
+import { CarersAndParentsComponent } from './components/pages/carers-and-parents/carers-and-parents.component';
+import { FosterAgencyComponent } from './components/pages/foster-agency/foster-agency.component';
+import { LocalAuthoritiesComponent } from './components/pages/local-authorities/local-authorities.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TherapeuticFosteringComponent } from './components/pages/therapeutic-fostering/therapeutic-fostering.component';
+import { EnquireNowComponent } from './components/pages/enquire-now/enquire-now.component';
+
 
 @NgModule({
   declarations: [
@@ -50,7 +61,6 @@ import { AboutUsComponent } from './components/pages/about-us/about-us.component
     SupportComponent,
     RegulationsStandardsComponent,
     VisionComponent,
-    EnquireUsComponent,
     BlogComponent,
     HelpComponent,
     LatestNewsComponent,
@@ -61,11 +71,22 @@ import { AboutUsComponent } from './components/pages/about-us/about-us.component
     JobsVolunteeringComponent,
     GdprPolicyComponent,
     SiteMapComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    BecomeAFosterCareComponent,
+    MockingbirdFamilyModelComponent,
+    QuizForFosterComponent,
+    CanIFosterComponent,
+    CarersAndParentsComponent,
+    FosterAgencyComponent,
+    LocalAuthoritiesComponent,
+    TherapeuticFosteringComponent,
+    EnquireNowComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

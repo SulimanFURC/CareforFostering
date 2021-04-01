@@ -1,3 +1,28 @@
+.logo{
+    width: 200px;
+}
+.footer-area .container-fluid {
+    padding: 40px 120px;
+}
+@media only screen and (max-width: 1440px) {
+
+    .footer-area .container-fluid {
+        padding: 40px 50px;
+    }
+    .logo{
+        width: 180px;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    .footer-area .container-fluid {
+        padding: 40px 15px;
+    }
+    .logo{
+        width: 150px;
+    }
+}
+
 @media only screen and (min-width: 1550px){
     footer .container-fluid {
         padding-left: 120px;

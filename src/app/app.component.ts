@@ -31,6 +31,7 @@ export class AppComponent implements OnInit {
         .pipe(filter(event => event instanceof NavigationEnd || event instanceof NavigationCancel))
         .subscribe(event => {
             $.getScript('../assets/js/main.js');
+            $.getScript('../assets/js/bcome-a-foster-care.js');
             this.location = this.router.url;
             if (!(event instanceof NavigationEnd)) {
                 return;

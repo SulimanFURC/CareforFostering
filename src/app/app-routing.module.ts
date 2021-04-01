@@ -5,7 +5,6 @@ import { BlogComponent } from './components/pages/blog/blog.component';
 import { ContactUsComponent } from './components/pages/contact-us/contact-us.component';
 import { CookiePolicyComponent } from './components/pages/cookie-policy/cookie-policy.component';
 import { DataSecurityComponent } from './components/pages/data-security/data-security.component';
-import { EnquireUsComponent } from './components/pages/enquire-us/enquire-us.component';
 import { FosterCarerComponent } from './components/pages/foster-carer/foster-carer.component';
 import { FosteringTypesComponent } from './components/pages/fostering-types/fostering-types.component';
 import { GdprPolicyComponent } from './components/pages/gdpr-policy/gdpr-policy.component';
@@ -23,6 +22,14 @@ import { VisionComponent } from './components/pages/vision/vision.component';
 import { WhoCanFosterComponent } from './components/pages/who-can-foster/who-can-foster.component';
 import { WhyFosterComponent } from './components/pages/why-foster/why-foster.component';
 import { WhyUsComponent } from './components/pages/why-us/why-us.component';
+import { BecomeAFosterCareComponent } from './components/pages/become-a-foster-care/become-a-foster-care.component';
+import { MockingbirdFamilyModelComponent } from './components/pages/mockingbird-family-model/mockingbird-family-model.component';
+import { CarersAndParentsComponent } from './components/pages/carers-and-parents/carers-and-parents.component';
+import { FosterAgencyComponent } from './components/pages/foster-agency/foster-agency.component';
+import { LocalAuthoritiesComponent } from './components/pages/local-authorities/local-authorities.component';
+import { TherapeuticFosteringComponent } from './components/pages/therapeutic-fostering/therapeutic-fostering.component';
+import { CanIFosterComponent } from './components/pages/can-i-foster/can-i-foster.component';
+import { EnquireNowComponent } from './components/pages/enquire-now/enquire-now.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -36,7 +43,6 @@ const routes: Routes = [
     {path: 'regulations-standards', component: RegulationsStandardsComponent},
     {path: 'vision', component: VisionComponent},
     {path: 'contact', component: ContactUsComponent},
-    {path: 'enquire-us', component: EnquireUsComponent},
     {path: 'help', component: HelpComponent},
     {path: 'blog', component: BlogComponent},
     {path: 'latest-news', component: LatestNewsComponent},
@@ -47,7 +53,15 @@ const routes: Routes = [
     {path: 'jobs-volunteering', component: JobsVolunteeringComponent},
     {path: 'gdpr-policy', component: GdprPolicyComponent},
     {path: 'about-us', component: AboutUsComponent},
-    {path: 'site-map', component: SiteMapComponent}
+    {path: 'site-map', component: SiteMapComponent},
+    {path: 'become-a-foster-care', component: BecomeAFosterCareComponent},
+    {path: 'app-mockingbird-family-model', component: MockingbirdFamilyModelComponent},
+    {path: 'app-carers-and-parents', component: CarersAndParentsComponent},
+    {path: 'app-foster-agency', component: FosterAgencyComponent},
+    {path: 'app-local-authorities', component: LocalAuthoritiesComponent},
+    {path: 'app-therapeutic-fostering', component: TherapeuticFosteringComponent},
+    {path: 'app-can-i-foster', component: CanIFosterComponent},
+    {path: 'enquire-now', component: EnquireNowComponent}
 
 ];
 

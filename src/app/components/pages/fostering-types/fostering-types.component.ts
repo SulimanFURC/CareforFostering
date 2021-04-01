@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-fostering-types',
+  selector: 'fostering-types',
   templateUrl: './fostering-types.component.html',
   styleUrls: ['./fostering-types.component.scss']
 })

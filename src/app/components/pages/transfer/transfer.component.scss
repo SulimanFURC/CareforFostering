@@ -1,0 +1,11 @@
+.page-title-content li{
+    display: none;
+}
+a{
+    color: #221638;
+    &:hover{
+        color: #fe4a55;
+        transform: 0.5s;
+        text-decoration: none;
+    }
+}

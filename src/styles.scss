@@ -101,6 +101,9 @@ p {
 .bg-eee8df {
     background-color: #eee8df;
 }
+.mb-100 {
+    margin-bottom: 100px;
+}
 .ptb-100 {
     padding: {
         top: 100px;
@@ -1307,7 +1310,7 @@ Navbar Area CSS
         }
         .logo {
             position: relative;
-            width: 70%;
+            width: 15%;
             z-index: 999;
         }
     }
@@ -1316,6 +1319,18 @@ Navbar Area CSS
     }
     .others-option-for-responsive {
         display: block;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+
+
+    .odemy-responsive-nav {
+        .logo {
+            position: relative;
+            width: 25%;
+            z-index: 999;
+        }
     }
 
 }
@@ -8042,6 +8057,7 @@ Selected Ages Area CSS
         clip-path: polygon(0 0, 100% 0, 99% 100%, 3% 100%);
         background-color: #cce7e8;
         color: #5caaac;
+        font-size: larger!important;
         padding: {
             left: 10px;
             right: 10px;
@@ -8074,6 +8090,7 @@ Selected Ages Area CSS
             h3 {
                 background-color: #ffb0b4;
                 color: #fe4a55;
+                font-size: larger!important;
             }
             .ages-number {
                 color: #fe4a55;
@@ -8085,6 +8102,7 @@ Selected Ages Area CSS
             h3 {
                 background-color: #ffeac4;
                 color: #ffa70a;
+                font-size: larger!important;
             }
             .ages-number {
                 color: #ffa70a;
@@ -8096,6 +8114,7 @@ Selected Ages Area CSS
             h3 {
                 background-color: #ebbcff;
                 color: #be22ff;
+                font-size: larger!important;
             }
             .ages-number {
                 color: #be22ff;
@@ -15136,7 +15155,7 @@ Contact Area CSS
     }
 }
 .contact-form {
-    overflow: hidden;
+    // overflow: hidden;
     padding: 35px;
     margin-left: 15px;
     border-radius: 5px;
@@ -15528,8 +15547,8 @@ Go Top CSS
 .nice-select {
     background: transparent !important;
     width: 130px !important;
-    height: 30px !important;
-    line-height: 27px;
+    height: 45px !important;
+    line-height: 45px;
     color: #fff !important;
     border: 1px solid;
     padding: 0px 5px;
@@ -15570,3 +15589,21 @@ ul.list {
     transition: all 0.15s ease-in-out;
     width: 9px;
 }
+
+
+.owl-stage-outer .owl-stage {
+    margin: 0 auto;
+  }
+  .services-slides.owl-carousel.owl-theme.owl-loaded.owl-drag div {
+    margin: 0 auto !important;
+  }
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+
+
